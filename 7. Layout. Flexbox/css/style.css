@@ -1,0 +1,164 @@
+.ul, .p, .h {
+  margin: 0;
+}
+
+.ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.site-container {
+  width: 1170px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.section:not(:last-child), .header {
+  margin-bottom: 70px;
+}
+
+.header-first, .header-nav, .offer-content, .services-list, .advantages-list, .placement-list, .article-top {
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*header*/
+
+.header-first {
+  margin-bottom: 30px;
+}
+
+.header-logo {
+  margin-right: 40px;
+}
+
+.header-phone {
+  align-self: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  text-indent: 40px;
+}
+
+/*nav*/
+
+.header-nav {
+  padding: 14px 45px;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.header-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+/*offer*/
+
+.offer-article {
+  width: 573px;
+  box-sizing: border-box;
+}
+
+.offer-article-small {
+  padding: 40px 108px 40px 45px;
+}
+
+.offer-article-small:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.offer-article-big {
+  padding: 212px 229px 40px 45px;
+}
+
+.offer-article h3 {
+  margin-bottom: 15px;
+}
+
+.offer-article p {
+  margin-bottom: 47px;
+}
+
+/*about*/
+
+.about {
+  width: 888px;
+}
+
+/*services*/
+
+.services-item {
+  width: 573px;
+}
+
+.services-content {
+padding: 191px 126px 35px 45px;
+}
+
+.si-first-line {
+  margin-bottom: 24px;
+}
+
+/*advantages*/
+
+.advantages-list {
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  width: 276px;
+}
+
+.ai-first-line {
+  margin-bottom: 22px;
+}
+
+.advantages-item-container {
+  padding: 116px 42px 32px 45px
+}
+
+/*placement*/
+
+.placement-list {
+  flex-wrap: wrap;
+}
+
+.placement-item {
+  width: 374px;
+}
+
+.pi-first-line, .pi-second-line {
+  margin-bottom: 24px;
+}
+
+.article-text {
+  padding: 32px 45px 45px;
+}
+
+.article-top, .article-title {
+  margin-bottom: 16px;
+}
+
+.article-top {
+  align-items: flex-end;
+}
+
+.article-descr {
+  margin-bottom: 20px;
+}
+
+.all-variants-paragraph {
+  padding: 373px 54px 27px;
+}

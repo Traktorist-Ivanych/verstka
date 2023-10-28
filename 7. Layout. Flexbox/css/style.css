@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .ul, .p, .h {
   margin: 0;
 }
@@ -14,6 +18,8 @@
 .flex {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .site-container {
@@ -24,11 +30,6 @@
 
 .section:not(:last-child), .header {
   margin-bottom: 70px;
-}
-
-.header-first, .header-nav, .offer-content, .services-list, .advantages-list, .placement-list, .article-top {
-  justify-content: space-between;
-  align-items: center;
 }
 
 /*header*/
@@ -66,9 +67,17 @@
 
 /*offer*/
 
+.offer-content {
+  align-items: normal;
+}
+
+.offer-left {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .offer-article {
   width: 573px;
-  box-sizing: border-box;
 }
 
 .offer-article-small {
@@ -135,8 +144,19 @@ padding: 191px 126px 35px 45px;
   flex-wrap: wrap;
 }
 
+.placement-image {
+  display: block;
+}
+
 .placement-item {
   width: 374px;
+}
+
+.placement-item:last-child {
+  flex-direction: column;
+  justify-content: flex-end;
+  align-self: normal;
+  padding-bottom: 27px;
 }
 
 .pi-first-line, .pi-second-line {
@@ -157,8 +177,4 @@ padding: 191px 126px 35px 45px;
 
 .article-descr {
   margin-bottom: 20px;
-}
-
-.all-variants-paragraph {
-  padding: 373px 54px 27px;
 }

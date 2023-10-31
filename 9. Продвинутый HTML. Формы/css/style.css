@@ -575,12 +575,9 @@ color: #CC9933;
   padding: 45px;
   background-color: #333;
   border-radius: 15px;
-}
-
-.footer-image {
-  position: absolute;
-  bottom: 0;
-  right: 177px;
+  background-image: url(../img/sun.svg);
+  background-repeat: no-repeat;
+  background-position: 700px bottom;
 }
 
 .footer-information {
@@ -637,8 +634,24 @@ color: #fff;
   flex-direction: column;
   align-self: normal;
   justify-content: flex-start;
+  gap: 20px;
 }
 
-.link-footer-social:not(:last-child) {
-  margin-bottom: 20px;
+.link-footer-social {
+background-repeat: no-repeat;
+background-position: center;
+height: 25px;
+width: 25px;
+}
+
+.owl {
+  background-image: url(../img/owl.svg);
+}
+
+.ok {
+  background-image: url(../img/ok.svg);
+}
+
+.vk {
+  background-image: url(../img/vk.svg);
 }

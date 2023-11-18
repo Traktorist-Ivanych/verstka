@@ -116,6 +116,10 @@
   width: 100%;
 }
 
+.burger {
+  display: none;
+}
+
 .nav__list {
   justify-content: space-between;
   max-width: 629px;
@@ -153,8 +157,10 @@
   color: var(--orange-dark-color);
 }
 
-.nav__link {
+.nav__btn {
   background-image: url(../img/loupe.svg);
+  background-color: transparent;
+  border: 0;
   background-repeat: no-repeat;
   background-position: left 50% top 50%;
   width: 24px;
@@ -164,16 +170,16 @@
   transition: color linear 0.3s, outline-color linear 0.3s, background-image linear 0.3s;
 }
 
-.nav__link:focus {
+.nav__btn:focus {
   outline-color: var(--orange-color);
 }
 
-.nav__link:hover {
+.nav__btn:hover {
   outline-color: var(--white-color);
   background-image: url(../img/loupe-orange.svg);
 }
 
-.nav__link:active {
+.nav__btn:active {
   outline-color: var(--white-color);
   background-image: url(../img/loupe.svg);
 }

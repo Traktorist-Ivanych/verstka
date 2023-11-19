@@ -390,7 +390,7 @@ padding: 19px 37px;
   }
 
 .header {
-  padding: 17px 15px 32px 15px;
+  padding: 17px 15px 38px 15px;
   position: relative;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -402,7 +402,7 @@ padding: 19px 37px;
   margin-bottom: 17px;
 }
 
-.nav__btn {
+.nav__link {
   position: absolute;
   top: 22px;
   right: 15px;
@@ -417,18 +417,18 @@ padding: 19px 37px;
 }
 
 .nav__list {
-  position: absolute;
-  display: none;
+  margin: 0 auto;
   text-wrap: nowrap;
-  background-color: #fff;
-  width: 188px;
-  transition: 0.3s;
+  overflow: hidden;
 }
 
 .nav__list-item {
+  padding: 0;
   border: 0;
-  padding-left: 24px;
-  padding-bottom: 24px;
+}
+
+.nav__list-item:not(:last-child) {
+  margin-right: 26px;
 }
 
 .item__link {
@@ -436,29 +436,8 @@ padding: 19px 37px;
   line-height: 20px;
 }
 
-.burger {
-  position: relative;
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background-image: url(../img/menu.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: transparent;
-  box-sizing: border-box;
-  border: 0;
-}
-
-.burger:focus {
-  background-image: url(../img/cross-black.svg);
-}
-
-.burger:focus ~ .nav__list {
-  display: inline-block;
-}
-
 .main {
-  padding: 20px 15px 60px;
+  padding: 22px 15px 60px;
 }
 
 .top-container {
